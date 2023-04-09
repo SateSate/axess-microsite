@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background: url("../img/bg.svg") no-repeat center center;
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+}
+.container .vertical-section,
+.container .horizontal-section {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-container .banner-section {
+  height: 100%;
+  background: url(../img/banner.svg) no-repeat center center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 8%;
+  text-align: center;
+}
+.banner-container .banner-section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 153px;
+}
+.banner-container .banner-section .content h1 {
+  font-size: 130px;
+}
+.banner-container .banner-section .scroll-helper {
+  width: 139px;
+  height: 139px;
+  border-radius: 50%;
+  border: 2px solid #48199f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 20px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.story-container .content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.story-container .content h2 {
+  font-size: 130px;
+}
+.story-container .content h2 span {
+  display: inline-block;
+  position: relative;
+}
+.story-container .content h2 span.tag:after {
+  content: "";
+  background: url("../img/nr-bg.svg") no-repeat center center;
+  position: absolute;
+  top: -20px;
+  left: -45px;
+  width: 226px;
+  height: 194px;
+  z-index: -1;
+  animation: infinite-scale 3s infinite;
+}
+.story-container .content h2 span:not(.tag) {
+  border: 1px solid #fb8034;
+  border-radius: 100px;
+  padding: 0 30px;
+}
+
+@keyframes infinite-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.seperator {
+  border: 1px solid #fff;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.horizontal .horizontal-section {
+  width: 100%;
+  height: 100%;
+}
+.horizontal .horizontal-section .content {
+  width: 100%;
+  height: 100%;
+}
+
+.unlimited-possibilities {
+  height: 100%;
+  width: 100%;
+}
+
+.horizontal-container {
+  height: 100%;
+}
+.horizontal-container .horizontal-section {
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
