@@ -2,9 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Axess</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -12,8 +16,8 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="vertical container">
-      <div class="vertical-section banner-container">
+    <div id="fullpage">
+      <div class="section active">
         <div class="banner-section">
           <nav class="nav">
             <div class="logo">
@@ -48,69 +52,269 @@
               <img src="./assets/img/arrow.svg" alt="" />
             </div>
           </div>
-        </div>
-      </div>
-      <div class="vertical-section story-container">
-        <div class="content">
-          <h2 class="text1">
-            <span class="tag">19</span>
-            Days left until the story begins.
-          </h2>
-          <div class="seperator"></div>
-          <h2 class="text2">
-            <span>What</span>
-            do we <br />
-            want to talk <br />
-            about?
-          </h2>
-        </div>
-      </div>
-    </div>
-    <div class="vertical2 container">
-      <div class="vertical-section">
-        <div class="why">
-          <p>Why?</p>
-          <ul>
-            <li>
-              <span></span>
-              <p>Host everything on one platform</p>
-            </li>
-            <li>
-              <span></span>
-              <p>Bringing business to the next level</p>
-            </li>
-          </ul>
-          <div class="speaker">
-            <img src="./assets/img/speaker.svg" alt="" />
-            Speaker
+          <div class="video-holder">
+            <video
+              loop
+              muted
+              autoplay
+              playsinline
+              src="./assets/img/video.mp4"
+            ></video>
           </div>
         </div>
       </div>
-    </div>
-    <div class="vertical2 container">
-      <div class="vertical-section">
-        <div class="why">
-          <p>Why?</p>
-          <ul>
-            <li>
-              <span></span>
-              <p>Host everything on one platform</p>
-            </li>
-            <li>
-              <span></span>
-              <p>Bringing business to the next level</p>
-            </li>
-          </ul>
-          <div class="speaker">
-            <img src="./assets/img/speaker.svg" alt="" />
-            Speaker
+      <div class="section story">
+        <div class="story-container">
+          <div class="content">
+            <h2 class="text1">
+              <span class="tag">19</span>
+              Days left until the story begins.
+            </h2>
+            <div class="seperator story-seperator"></div>
+            <h2 class="text2">
+              <span>What</span>
+              do we <br />
+              want to talk <br />
+              about?
+            </h2>
           </div>
         </div>
       </div>
-    </div>
+      <div class="section" data-horizontal-section>
+        <div class="slide active">
+          <img class="line1" src="./assets/img/line1.svg" alt="" />
+          <div class="unlimited s1">
+            <h2>Unlimited Possibilities</h2>
+            <div class="text">
+              <img src="./assets/img/x.svg" alt="" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+              <p>
+                Sell anything <br />
+                anywhere <br />
+                anytime
+              </p>
+            </div>
+            <a href=""
+              >Let us show you how <img src="./assets/img/arrow-r.svg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="slide bg-sec">
+          <img class="line2" src="./assets/img/line2.svg" alt="" />
+          <div class="unlimited s2">
+            <div class="title-unlimited">Unlimited</div>
+
+            <div class="flex-items">
+              <h2>Business Ideas</h2>
+              <div class="text">
+                <img src="./assets/img/x.svg" alt="" />
+                <p>
+                  Host <br />
+                  everything <br />
+                  on one <br />
+                  platform
+                </p>
+              </div>
+            </div>
+            <div class="flex-items">
+              <h2>Creativity</h2>
+              <div class="text">
+                <img src="./assets/img/x.svg" alt="" />
+                <p>
+                  Unlimited combinations <br />
+                  of services <br />
+                  and products
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide bg-sec">
+          <img class="line3" src="./assets/img/line3.svg" alt="" />
+          <div class="unlimited s3">
+            <div class="title-unlimited possibilities">Possibilities</div>
+
+            <div class="flex-items">
+              <h2>Possibilities & Solutions</h2>
+              <div class="text">
+                <img src="./assets/img/x.svg" alt="" />
+                <p>Streamline everyday business to increase productivity</p>
+              </div>
+            </div>
+            <div class="flex-items">
+              <h2>Our Vision</h2>
+              <div class="text">
+                <img src="./assets/img/x.svg" alt="" />
+                <p>
+                  Sell anything anywhere <br />
+                  anytime
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section why">
+        <div class="seperator"></div>
+        <div class="why-section">
+          <div class="flex">
+            <span> Why? </span>
+            <ul>
+              <li>Host everything on one platform</li>
+              <li>Bringing business to the next level</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="section" scrollable>
+        <div class="marquee">
+          <h3>&nbsp;Enric Llopart&nbsp;</h3>
+        </div>
+        <div class="who">
+          <div class="container-name">
+            <div class="speaker-name">
+              <span class="span1"
+                >Enric Llopart &nbsp;&nbsp; Enric Llopart &nbsp;&nbsp;</span
+              >
+              <span class="span1"
+                >Enric Llopart &nbsp;&nbsp; Enric Llopart &nbsp;&nbsp;</span
+              >
+            </div>
+          </div>
+          <div class="speaker">
+            <img src="./assets/img/speaker.svg" alt="" />
+            <span>Speaker</span>
+          </div>
+          <div class="seperator"></div>
+          <div class="who-section">
+            <div class="flex">
+              <span> Who? </span>
+              <div>
+                <p>
+                  <img src="./assets/img/arrow-r.svg" alt="" />
+                  Our industry leading keynote speaker Enric Llopart, the former
+                  Chief Digital Director of FC Barcelona, will be leading us
+                  through the night by presenting our vision for the future. He
+                  will also give insights into digitalization and technological
+                  disruption, and the opportunities that arise with it.
+                </p>
+                <img
+                  class="speaker-img"
+                  src="./assets/img/the-speaker.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="seperator"></div>
+          <div class="date-location">
+            <div class="item">
+              <span>DATE</span>
+              <span
+                >April 19th 2023 <br />
+                19:00 <br />
+                Interalpin 2023</span
+              >
+            </div>
+            <div class="item">
+              <span>LOCATION</span>
+              <span
+                >Adler´s Rooftop <br />
+                Innsbruck/Austria</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section white">
+        <div class="white-content">
+          <h2>
+            We will take <br />
+            you through <br />
+            our <span>vision.</span>
+          </h2>
+        </div>
+        <div class="socials">
+          <h3>SOCIAL MEDIA AND CONTACT</h3>
+          <ul>
+            <li>
+              <a href=""> INSTAGRAM </a>
+            </li>
+            <li>
+              <a href=""> LINKEDIN </a>
+            </li>
+            <li>
+              <a href=""> FACEBOOK </a>
+            </li>
+            <li>
+              <a href=""> TWITTER </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section footer">
+        <div class="footer-flex">
+          <div class="footer-items">
+            <ul>
+              <li>
+                <a href="">
+                  Why? <img src="./assets/img/arrow-angle-b.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Who? <img src="./assets/img/arrow-angle-b.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  What? <img src="./assets/img/arrow-angle-b.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span>Address</span>
+              </li>
+              <li>
+                Axess AG <br />
+                Sonystraße 18 <br />
+                5081 Anif/Salzburg
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span>Contact</span>
+              </li>
+              <li>
+                <a href="tel:43 6246 202">+43 6246 202</a>
+              </li>
+              <li>
+                <a
+                  href="mailto:info@teamaxess.com
+                        "
+                >
+                  info@teamaxess.com
+                </a>
+              </li>
+              <li>
+                <a href="https://teamaxess.com"> teamaxess.com </a>
+              </li>
+            </ul>
+          </div>
+          <div class="email">info@teamaxes</div>
+          <div class="bootom-footer">
+            <div class="copy">© 2023 Axess AG Anif/Salzburg.</div>
+            <img src="./assets/img/logo-b.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/scrolloverflow.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
