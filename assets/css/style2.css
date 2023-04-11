@@ -392,6 +392,26 @@ body {
   left: 30%;
   width: 70%;
 }
+@media screen and (min-width: 375px) {
+  .line1 {
+    top: 45%;
+  }
+}
+@media screen and (min-width: 555px) {
+  .line1 {
+    top: 40%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .line1 {
+    top: 33%;
+  }
+}
+@media (min-width: 922px) and (min-width: 1200px) {
+  .line1 {
+    top: 22%;
+  }
+}
 
 .line2 {
   position: absolute;

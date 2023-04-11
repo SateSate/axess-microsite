@@ -345,6 +345,18 @@ body {
   top: 4%;
   left: 30%;
   width: 70%;
+  @media screen and (min-width: 375px) {
+    top: 45%;
+  }
+  @media screen and (min-width: 555px) {
+    top: 40%;
+  }
+  @media screen and (min-width: 700px) {
+    top: 33%;
+  }
+  @media (min-width: 922px) and (min-width: 1200px) {
+    top: 22%;
+  }
 }
 
 .line2 {
