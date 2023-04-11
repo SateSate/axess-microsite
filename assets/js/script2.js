@@ -7,6 +7,14 @@ document.addEventListener('DOMContentLoaded', function () {
     navigation: false,
     css3: true,
     controlArrows: false,
+    scrollOverflow: true,
+    scrollOverflowOptions: {
+      scrollbars: false,
+      mouseWheel: true,
+      hideScrollbarsOnMobile: true,
+      interactiveScrollbars: true,
+      fadeScrollbars: true,
+    },
     afterSlideLoad: function (section, origin, destination, direction) {
       slideIndexS = destination.index + 1;
     },
