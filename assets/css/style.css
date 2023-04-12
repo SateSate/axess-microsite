@@ -781,7 +781,6 @@ body {
 .footer {
   background: white;
   color: #000;
-  padding: 133px 6% 0;
   position: relative;
   font-weight: 500;
 }
@@ -813,6 +812,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  padding: 133px 6% 0;
 }
 @media screen and (max-width: 992px) {
   .footer-items {
@@ -830,6 +830,7 @@ body {
   width: 100%;
   font-size: 30px;
   font-weight: 500;
+  padding: 133px 6% 30px;
 }
 @media screen and (max-width: 540px) {
   .bootom-footer {
@@ -867,8 +868,8 @@ body {
 }
 
 .marque-bottom-container {
-  height: 217px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  height: 180px;
   position: relative;
 }
 
