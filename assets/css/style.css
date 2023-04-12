@@ -236,6 +236,8 @@ body {
 
 .unlimited {
   width: max-content;
+  position: relative;
+  z-index: 9;
 }
 .unlimited h2 {
   font-size: 60px;
@@ -389,11 +391,6 @@ body {
 }
 .fp-scrollable {
   height: 100%;
-}
-
-.bg-sec {
-  background: url(../img/bg-sec.svg) no-repeat center center;
-  background-size: cover;
 }
 
 .fp-tableCell {

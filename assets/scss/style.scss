@@ -222,6 +222,8 @@ body {
 
 .unlimited {
   width: max-content;
+  position: relative;
+  z-index: 9;
   h2 {
     font-size: 60px;
     font-weight: 300;
@@ -355,10 +357,10 @@ body {
   height: 100%;
 }
 
-.bg-sec {
-  background: url(../img/bg-sec.svg) no-repeat center center;
-  background-size: cover;
-}
+// .bg-sec {
+//   background: url(../img/bg-sec.svg) no-repeat center center;
+//   background-size: cover;
+// }
 
 .fp-tableCell {
   position: relative;
