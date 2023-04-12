@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     navigation: false,
     css3: true,
     controlArrows: false,
+    anchors: ['banner', 'what', 'unlimited', 'why', 'who', 'footer'],
     scrollOverflow: true,
     scrollOverflowOptions: {
       scrollbars: false,
@@ -57,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     },
   });
-  fullpageInstance.setScrollingSpeed(1500);
+  fullpageInstance.setScrollingSpeed(2000);
 });
 
 function marquee(selector, speed) {
@@ -82,6 +83,7 @@ function marquee(selector, speed) {
 //1 class selector for marquee
 //2 marquee speed 0.2
 window.addEventListener('load', marquee('.marquee', 0.5));
+window.addEventListener('load', marquee('.marquee-bottom', 0.5));
 
 // // heading animation
 // const heading = document.querySelector('.title');

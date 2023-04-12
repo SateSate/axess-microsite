@@ -1,0 +1,66 @@
+Please stick to the spacing, fonts etc. from the XD file. Everything is exactly defined.
+ 
+In General:
+Navigation: Sticky Navigation ❌
+Font: It's the wrong font, isn't it? We use Avenir Next Cyr ✅
+Font Size: Please make sure that each font size corresponds to that of the XD file ✅
+Spacing: Spacing should always be the same as in the file. In the XD you can also recognize the height by the black blocks. ❌
+Outline: Same thickness as the line from left to right ❌
+Scroll speed: Is it possible to increase it? ✅ from 1.5 to 2.0
+Gradient: start top right of the page with more orange ✅
+Separators: Minimize thickness by 50 ✅
+ 
+Navigation:
+Instead of Home | About | Contact it should be What | Why | Who with anchor links to the sections ✅
+ 
+Headline 19 Days left until the story begins:
+Number 19 – or now 7 – should bei completely inside the circle ✅
+Change text to “19 Days to go” ✅
+ 
+What do we want to talk about?
+Not the outline should be left-aligned with the text below, but the word "What" ✅
+ 
+Section from Unlimited Possibilites: ❌
+Line should be animated from left to right
+The gradient should match everywhere. Also from left to right. Without hard edges.
+ 
+"Sell anything anywhere.." + "Let us show you how"
+The gap is too small between the two sentences ✅
+Arrow after "Let us show you how": Jump to the right ✅
+ 
+Creativity
+Line break after "Unlimited" ✅
+ 
+Possibilities & Solutions
+Line break after "everyday" and "increase" ✅
+ 
+Why?
+Outline is to small – Words should always be completely in the circle ✅
+Please remove the bullets points ✅
+Space between "Why" and "host everything" isn't correct ✅
+Add line break after "Host everything on" ✅
+Add line break after "Bringing business to" ✅
+Space to the next section is much too large ✅
+ 
+Who?
+The word "Who" is not centered in the outline ✅
+Arrow should be white ✅
+Text "Our industry..": Please keep to the line breaks according to the XD file. And the spaces between the lines do not fit.  ✅
+"Enric Llopart" -> too big ✅
+After the picture, there should be no separator ✅
+Date: please delete the text “Interalpin 2023” ✅
+ 
+We will take you through our vision 
+Text shouldn't be bold ✅
+Spacing isn't correct ✅
+ 
+Social Media and Contact 
+Text shouldn't be bold ✅
+Please add a line below ✅
+Spacing between Social Media Channels is to big ✅
+Distance to footer is too big ✅
+ 
+Footer
+Distance to mail adress (info@teamaxess.com) is too big ✅
+Please write info@teamaxess.com and animate it like "Enric Llopart" ✅
+Distance to copyright is to big ✅
