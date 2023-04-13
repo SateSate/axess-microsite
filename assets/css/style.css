@@ -35,7 +35,7 @@ ul {
 
 body {
   color: #fff;
-  background: url("../img/bg.png") top right no-repeat;
+  background: url("../img/bg.jpg") top right no-repeat;
   background-size: cover;
   font-family: "Avenir Next Cyr";
   font-weight: 400;
@@ -155,7 +155,7 @@ body {
   height: 100%;
 }
 .story-container .content {
-  padding: 80px 7%;
+  padding: 8% 7% 3%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -195,6 +195,8 @@ body {
 }
 .story-container .content h2 span.tag {
   position: relative;
+  display: inline-block;
+  margin-right: 35px;
 }
 .story-container .content h2 span.tag::after {
   content: "";
@@ -211,6 +213,8 @@ body {
 }
 .story-container .content h2 span:not(.tag) {
   position: relative;
+  display: inline-block;
+  margin-right: 35px;
 }
 .story-container .content h2 span:not(.tag)::after {
   content: "";
@@ -225,6 +229,9 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+.story-container .seperator {
+  margin: 50px auto 0;
 }
 
 .seperator {
@@ -336,8 +343,8 @@ body {
 .unlimited.s2 {
   padding: 3% 5%;
   display: flex;
-  justify-content: space-between;
   width: 100%;
+  gap: 20%;
 }
 @media screen and (max-width: 992px) {
   .unlimited.s2 {
@@ -345,7 +352,7 @@ body {
   }
 }
 .unlimited.s2 .flex-items:last-child {
-  margin-top: 10%;
+  margin-top: 7%;
 }
 @media screen and (max-width: 992px) {
   .unlimited.s2 .flex-items:last-child {
@@ -354,11 +361,10 @@ body {
   }
 }
 .unlimited.s3 {
-  padding: 13% 6% 3% 5%;
+  padding: 16.5% 6% 3% 5%;
   display: flex;
-  justify-content: space-between;
   width: 100%;
-  gap: 50px;
+  gap: 20%;
 }
 @media screen and (max-width: 992px) {
   .unlimited.s3 {
@@ -366,8 +372,7 @@ body {
   }
 }
 .unlimited.s3 .flex-items:last-child {
-  margin-top: 15%;
-  margin-left: auto;
+  margin-top: 11%;
 }
 @media screen and (max-width: 992px) {
   .unlimited.s3 .flex-items:last-child {
@@ -484,7 +489,6 @@ body {
   border-radius: 100px;
   padding: 40px;
   display: block;
-  margin-right: 40px;
 }
 @media screen and (max-width: 992px) {
   .why-section span {
@@ -515,7 +519,7 @@ body {
 .why-section .flex {
   display: flex;
   align-items: flex-start;
-  gap: 80px;
+  gap: 25px;
 }
 @media screen and (max-width: 1180px) {
   .why-section .flex {
@@ -534,7 +538,6 @@ body {
   border-radius: 100px;
   padding: 40px;
   display: block;
-  margin-right: 40px;
 }
 @media screen and (max-width: 992px) {
   .who-section span {
@@ -570,6 +573,8 @@ body {
   line-height: 40px;
   margin-bottom: 40px;
   font-weight: 500;
+  max-width: 832px;
+  width: 100%;
 }
 @media screen and (max-width: 992px) {
   .who-section p {
@@ -777,6 +782,11 @@ body {
   border-radius: 100px;
   padding: 5px 30px;
   color: #fb8034;
+  transition: all 0.4s ease;
+}
+.socials ul a:hover {
+  background: #fb8034;
+  color: white;
 }
 
 .footer {
@@ -798,15 +808,15 @@ body {
   display: block;
   margin-bottom: 10px;
 }
-.footer ul a {
-  display: block;
-  margin-bottom: 20px;
-}
 .footer .fp-scroller {
   height: 100%;
 }
 .footer .fp-tableCell {
   height: 100% !important;
+}
+.footer .links a {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-items {
@@ -907,6 +917,19 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.underline {
+  position: relative;
+}
+.underline::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #000;
 }
 
 /*# sourceMappingURL=style.css.map */

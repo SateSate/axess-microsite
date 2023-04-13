@@ -38,7 +38,7 @@ ul {
 
 body {
   color: #fff;
-  background: url('../img/bg.png') top right no-repeat;
+  background: url('../img/bg.jpg') top right no-repeat;
   background-size: cover;
   font-family: 'Avenir Next Cyr';
   font-weight: 400;
@@ -148,7 +148,7 @@ body {
 .story-container {
   height: 100%;
   .content {
-    padding: 80px 7%;
+    padding: 8% 7% 3%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -177,6 +177,8 @@ body {
         position: relative;
         &.tag {
           position: relative;
+          display: inline-block;
+          margin-right: 35px;
           &::after {
             content: '';
             border-radius: 100px;
@@ -193,6 +195,8 @@ body {
         }
         &:not(.tag) {
           position: relative;
+          display: inline-block;
+          margin-right: 35px;
           &::after {
             content: '';
             padding: 20px 40px;
@@ -210,6 +214,9 @@ body {
         }
       }
     }
+  }
+  .seperator {
+    margin: 50px auto 0;
   }
 }
 
@@ -304,14 +311,15 @@ body {
   &.s2 {
     padding: 3% 5%;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     width: 100%;
+    gap: 20%;
     @media screen and (max-width: 992px) {
       flex-direction: column;
     }
 
     .flex-items:last-child {
-      margin-top: 10%;
+      margin-top: 7%;
       @media screen and (max-width: 992px) {
         margin-top: 50%;
         margin-left: auto;
@@ -319,18 +327,18 @@ body {
     }
   }
   &.s3 {
-    padding: 13% 6% 3% 5%;
+    padding: 16.5% 6% 3% 5%;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     width: 100%;
-    gap: 50px;
+    gap: 20%;
     @media screen and (max-width: 992px) {
       flex-direction: column;
     }
 
     .flex-items:last-child {
-      margin-top: 15%;
-      margin-left: auto;
+      margin-top: 11%;
+      // margin-left: auto;
       @media screen and (max-width: 992px) {
         margin-top: 50%;
         margin-left: auto;
@@ -438,7 +446,7 @@ body {
     border-radius: 100px;
     padding: 40px;
     display: block;
-    margin-right: 40px;
+    // margin-right: 40px;
     @media screen and (max-width: 992px) {
       font-size: 100px;
       line-height: 80px;
@@ -481,7 +489,7 @@ body {
     display: flex;
     align-items: flex-start;
     // justify-content: space-between;
-    gap: 80px;
+    gap: 25px;
     @media screen and (max-width: 1180px) {
       flex-direction: column;
     }
@@ -500,7 +508,7 @@ body {
     border-radius: 100px;
     padding: 40px;
     display: block;
-    margin-right: 40px;
+    // margin-right: 40px;
     @media screen and (max-width: 992px) {
       font-size: 100px;
       line-height: 80px;
@@ -529,6 +537,8 @@ body {
     line-height: 40px;
     margin-bottom: 40px;
     font-weight: 500;
+    max-width: 832px;
+    width: 100%;
     @media screen and (max-width: 992px) {
       font-size: 18px;
       line-height: 30px;
@@ -702,6 +712,11 @@ body {
       border-radius: 100px;
       padding: 5px 30px;
       color: #fb8034;
+      transition: all 0.4s ease;
+      &:hover {
+        background: #fb8034;
+        color: white;
+      }
     }
   }
 }
@@ -721,16 +736,18 @@ body {
       display: block;
       margin-bottom: 10px;
     }
-    a {
-      display: block;
-      margin-bottom: 20px;
-    }
   }
   .fp-scroller {
     height: 100%;
   }
   .fp-tableCell {
     height: 100% !important;
+  }
+  .links {
+    a {
+      display: block;
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -829,5 +846,18 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+}
+
+.underline {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
   }
 }
