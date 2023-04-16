@@ -249,7 +249,7 @@ body {
   width: max-content;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1300px) {
   .unlimited h2 {
     font-size: 40px;
   }
@@ -276,7 +276,7 @@ body {
   font-size: 70px;
   line-height: 80px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1300px) {
   .unlimited .text p {
     font-size: 50px;
     line-height: 60px;
@@ -291,7 +291,7 @@ body {
 .unlimited .text img {
   padding-top: 20px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1300px) {
   .unlimited .text img {
     width: 50px;
     height: 50px;
@@ -311,7 +311,7 @@ body {
   width: max-content;
   color: #fb8034;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1300px) {
   .unlimited a {
     font-size: 20px;
     margin-left: 50px;
@@ -322,7 +322,7 @@ body {
   margin-left: 30px;
   animation: bounce 2s infinite;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1300px) {
   .unlimited a img {
     width: 20px;
     height: 20px;
@@ -342,17 +342,18 @@ body {
   width: 100%;
   gap: 20%;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1300px) {
   .unlimited.s2 {
     flex-direction: column;
+    gap: 10%;
   }
 }
 .unlimited.s2 .flex-items:last-child {
   margin-top: 7%;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1300px) {
   .unlimited.s2 .flex-items:last-child {
-    margin-top: 50%;
+    margin-top: 2%;
     margin-left: auto;
   }
 }
@@ -362,17 +363,23 @@ body {
   width: 100%;
   gap: 20%;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1400px) {
+  .unlimited.s3 {
+    gap: 10%;
+  }
+}
+@media screen and (max-width: 1300px) {
   .unlimited.s3 {
     flex-direction: column;
+    padding: 5% 5% 3% 5%;
   }
 }
 .unlimited.s3 .flex-items:last-child {
   margin-top: 11%;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1300px) {
   .unlimited.s3 .flex-items:last-child {
-    margin-top: 50%;
+    margin-top: 20%;
     margin-left: auto;
   }
 }
@@ -402,7 +409,7 @@ body {
   right: 2%;
   font-size: 150px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1300px) {
   .title-unlimited {
     font-size: 100px;
   }
@@ -422,40 +429,18 @@ body {
   left: 2%;
 }
 
-@media screen and (min-width: 375px) {
-  .line1 {
-    top: 45%;
-  }
-}
-@media screen and (min-width: 555px) {
-  .line1 {
-    top: 40%;
-  }
-}
-@media screen and (min-width: 700px) {
-  .line1 {
-    top: 33%;
-  }
-}
-@media (min-width: 922px) and (max-width: 1200px) {
-  .line1 {
-    top: 22%;
-  }
-}
-@media screen and (min-width: 1201px) {
-  .line1 {
-    position: absolute;
-    top: 4%;
-    left: 30%;
-    width: 70%;
-    z-index: -1;
-  }
+.line1 {
+  position: absolute;
+  top: 8%;
+  left: 39.5%;
+  width: 60.6%;
+  z-index: -1;
 }
 
 .line2 {
   position: absolute;
-  top: 62.8%;
-  left: 0;
+  top: 63%;
+  left: -2px;
   transform: translate(0, -50%);
   width: 100%;
   z-index: -1;
@@ -463,7 +448,7 @@ body {
 
 .line3 {
   position: absolute;
-  top: 62%;
+  top: 63%;
   left: 0;
   transform: translate(0, -50%);
   width: 70%;
@@ -926,6 +911,68 @@ body {
   width: 100%;
   height: 2px;
   background: #000;
+}
+
+.line1 #Path_846 {
+  display: none;
+}
+
+.fp-viewing-unlimited-0 .line1 #Path_846 {
+  display: block;
+  stroke-dasharray: 1333.6965332031;
+  stroke-dashoffset: 1333.6965332031;
+  animation: reveal 2s linear forwards;
+  animation-delay: 1s;
+}
+
+.fp-viewing-unlimited-1 .line1 #Path_846 {
+  display: block;
+  stroke-dasharray: 1333.6965332031;
+  stroke-dashoffset: 0;
+}
+
+.line2 #Path_845 {
+  display: none;
+}
+
+.fp-viewing-unlimited-1 .line2 #Path_845 {
+  display: block;
+  stroke-dasharray: 2324.0603027344;
+  stroke-dashoffset: 2324.0603027344;
+  animation: reveal 3s linear forwards;
+  animation-delay: 2s;
+}
+
+.fp-viewing-unlimited-2 .line2 #Path_845,
+.fp-viewing-unlimited-0 .line2 #Path_845 {
+  display: block;
+  stroke-dasharray: 2324.0603027344;
+  stroke-dashoffset: 0;
+}
+
+.line3 #Path_844 {
+  display: none;
+}
+
+.fp-viewing-unlimited-2 .line3 #Path_844 {
+  display: block;
+  stroke-dasharray: 1791.8852539063;
+  stroke-dashoffset: 1791.8852539063;
+  animation: reveal 2s linear forwards;
+  animation-delay: 2s;
+}
+
+.fp-viewing-unlimited-0 .line3 #Path_844,
+.fp-viewing-unlimited-1 .line3 #Path_844 {
+  display: block;
+  stroke-dasharray: 1791.8852539063;
+  stroke-dashoffset: 0;
+}
+
+@keyframes reveal {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

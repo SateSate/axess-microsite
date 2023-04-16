@@ -84,3 +84,7 @@ function marquee(selector, speed) {
 //2 marquee speed 0.2
 window.addEventListener('load', marquee('.marquee', 0.5));
 window.addEventListener('load', marquee('.marquee-bottom', 0.5));
+
+const path = document.getElementById('Path_844');
+const pathLength = path.getTotalLength();
+console.log(pathLength);
