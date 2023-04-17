@@ -914,17 +914,20 @@ body {
 }
 
 .line1 path {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .fp-viewing-unlimited-0 .line1 path {
-  display: block;
+  opacity: 1;
+  visibility: visible;
   animation: reveal 2s ease-in-out forwards;
   animation-delay: 1.5s;
 }
 
 .fp-viewing-unlimited-1 .line1 path {
-  display: block;
+  opacity: 1;
+  visibility: visible;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
