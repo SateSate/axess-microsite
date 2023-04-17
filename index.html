@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Axess</title>
     <link
       rel="stylesheet"
@@ -15,71 +16,67 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div id="fullpage">
-      <div class="section active" data-anchor="banner">
-        <div class="banner-section">
-          <nav class="nav">
-            <div class="logo">
-              <a href="">
-                <img src="./assets/img/logo.svg" alt="" />
+    <div class="container">
+      <div class="banner-section">
+        <nav class="nav">
+          <div class="logo">
+            <a href="">
+              <img src="./assets/img/logo.svg" alt="" />
+            </a>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#what" class="nav-link"
+                >What?
+                <img src="./assets/img/arrow-angle.svg" alt="" />
               </a>
-            </div>
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a href="#what" class="nav-link"
-                  >What?
-                  <img src="./assets/img/arrow-angle.svg" alt="" />
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#why" class="nav-link"
-                  >Why?
-                  <img src="./assets/img/arrow-angle.svg" alt="" />
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#who" class="nav-link"
-                  >Who? <img src="./assets/img/arrow-angle.svg" alt=""
-                /></a>
-              </li>
-            </ul>
-          </nav>
-          <div class="content">
-            <h1 class="title">Unlimited Possibilities</h1>
-            <div class="scroll-helper">
-              <span>SCROLL</span>
-              <img src="./assets/img/arrow.svg" alt="" />
-            </div>
-          </div>
-          <div class="video-holder">
-            <video
-              loop
-              muted
-              autoplay
-              playsinline
-              src="./assets/img/video.mp4"
-            ></video>
+            </li>
+            <li class="nav-item">
+              <a href="#why" class="nav-link"
+                >Why?
+                <img src="./assets/img/arrow-angle.svg" alt="" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#who" class="nav-link"
+                >Who? <img src="./assets/img/arrow-angle.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="content">
+          <h1 class="title">Unlimited Possibilities</h1>
+          <div class="scroll-helper">
+            <span>SCROLL</span>
+            <img src="./assets/img/arrow.svg" alt="" />
           </div>
         </div>
-      </div>
-      <div class="section story" data-anchor="what">
-        <div class="story-container">
-          <div class="content">
-            <h2 class="text1">
-              <span class="tag">7</span>
-              Days to go
-            </h2>
-            <div class="seperator story-seperator"></div>
-            <h2 class="text2">
-              <span>What</span>
-              do we <br />
-              want to talk <br />
-              about?
-            </h2>
-          </div>
+        <div class="video-holder">
+          <video
+            loop
+            muted
+            autoplay
+            playsinline
+            src="./assets/img/video.mp4"
+          ></video>
         </div>
       </div>
-      <div class="section" data-anchor="unlimited" data-horizontal-section>
+      <div class="story-container">
+        <div class="content">
+          <h2 class="text1">
+            <span class="tag">7</span>
+            Days to go
+          </h2>
+          <div class="seperator story-seperator"></div>
+          <h2 class="text2">
+            <span>What</span>
+            do we <br />
+            want to talk <br />
+            about?
+          </h2>
+        </div>
+      </div>
+      <div class="horizontal-scroll">
         <div class="slide active">
           <svg
             class="line1"
@@ -231,6 +228,8 @@
           </div>
         </div>
       </div>
+    </div>
+    <!-- <div id="fullpage">
       <div class="section why" data-anchor="why">
         <div class="seperator"></div>
         <div class="why-section">
@@ -392,7 +391,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/scrolloverflow.min.js"
