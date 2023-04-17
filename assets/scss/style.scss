@@ -859,13 +859,14 @@ body {
 
 .fp-viewing-unlimited-0 .line1 path {
   // display: block;
-  animation: reveal 2s ease-in-out forwards;
+  animation: reveal 2s ease-in-out;
   animation-delay: 1.5s;
 }
 
 .fp-viewing-unlimited-1 .line1 path {
   // display: block;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 @keyframes reveal {
