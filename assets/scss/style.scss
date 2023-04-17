@@ -854,20 +854,17 @@ body {
 }
 
 .line1 path {
-  opacity: 0;
-  visibility: hidden;
+  // display: none;
 }
 
 .fp-viewing-unlimited-0 .line1 path {
-  opacity: 1;
-  visibility: visible;
+  // display: block;
   animation: reveal 2s ease-in-out forwards;
   animation-delay: 1.5s;
 }
 
 .fp-viewing-unlimited-1 .line1 path {
-  opacity: 1;
-  visibility: visible;
+  // display: block;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -881,17 +878,17 @@ body {
 }
 
 .line2 path {
-  display: none;
+  // display: none;
 }
 
 .fp-viewing-unlimited-1 .line2 path {
-  display: block;
+  // display: block;
   animation: reveal2 2s ease-in-out forwards;
   animation-delay: 2s;
 }
 
 .fp-viewing-unlimited-2 .line2 path {
-  display: block;
+  // display: block;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -905,17 +902,17 @@ body {
 }
 
 .line3 path {
-  display: none;
+  // display: none;
 }
 
 .fp-viewing-unlimited-2 .line3 path {
-  display: block;
+  // display: block;
   animation: reveal3 2s ease-in-out forwards;
   animation-delay: 2s;
 }
 
 .fp-viewing-unlimited-3 .line3 path {
-  display: block;
+  // display: block;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 

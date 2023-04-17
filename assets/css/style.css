@@ -913,21 +913,12 @@ body {
   background: #000;
 }
 
-.line1 path {
-  opacity: 0;
-  visibility: hidden;
-}
-
 .fp-viewing-unlimited-0 .line1 path {
-  opacity: 1;
-  visibility: visible;
   animation: reveal 2s ease-in-out forwards;
   animation-delay: 1.5s;
 }
 
 .fp-viewing-unlimited-1 .line1 path {
-  opacity: 1;
-  visibility: visible;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -939,18 +930,12 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
-.line2 path {
-  display: none;
-}
-
 .fp-viewing-unlimited-1 .line2 path {
-  display: block;
   animation: reveal2 2s ease-in-out forwards;
   animation-delay: 2s;
 }
 
 .fp-viewing-unlimited-2 .line2 path {
-  display: block;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -962,18 +947,12 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
-.line3 path {
-  display: none;
-}
-
 .fp-viewing-unlimited-2 .line3 path {
-  display: block;
   animation: reveal3 2s ease-in-out forwards;
   animation-delay: 2s;
 }
 
 .fp-viewing-unlimited-3 .line3 path {
-  display: block;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
