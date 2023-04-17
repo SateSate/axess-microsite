@@ -965,5 +965,29 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
+@media (max-width: 767px) {
+  .line1 {
+    width: 100%;
+    height: auto;
+    top: 20%;
+    left: 0;
+  }
+
+  .line2 {
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 0;
+    transform: none;
+  }
+
+  .line3 {
+    width: 80%;
+    height: auto;
+    top: 50%;
+    left: 10%;
+    transform: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
