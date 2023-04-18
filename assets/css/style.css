@@ -55,8 +55,8 @@ ul {
 
 body {
   color: #fff;
-  background: url("../img/bg.jpg") left center no-repeat;
-  background-size: cover;
+  background: #e8713c;
+  background: linear-gradient(230deg, #e8713c 0%, #5a2c8e 100%);
   font-family: "Avenir Next Cyr";
   font-weight: 400;
   position: relative;
