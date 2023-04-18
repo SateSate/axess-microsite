@@ -281,6 +281,17 @@ body {
   }
 }
 
+.text-over {
+  font-size: 30vw;
+  white-space: nowrap;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  z-index: -9;
+  color: #000;
+  font-weight: 500;
+}
+
 .line-container {
   // clip-path: inset(0 0 0 0);
   // overflow: hidden;
@@ -289,6 +300,13 @@ body {
   // height: 100%;
   top: 16%;
   left: 13%;
+}
+
+.unlimited-img {
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  z-index: -9;
 }
 
 .line {
@@ -376,9 +394,9 @@ body {
     }
   }
   &.s1 {
-    padding: 20% 20% 0;
+    padding: 5% 0 0 30%;
     @media screen and (max-width: 767px) {
-      padding: 20% 5% 0;
+      padding: 10% 5% 0;
     }
   }
   &.s2 {
@@ -387,6 +405,7 @@ body {
     // justify-content: space-between;
     width: 100%;
     gap: 20%;
+    position: relative;
     @media screen and (max-width: 1300px) {
       flex-direction: column;
       gap: 10%;
@@ -533,15 +552,14 @@ body {
     }
     &::before {
       content: '';
+      background: url('../img/x.svg') no-repeat center center;
       display: block;
       width: 40px;
       height: 40px;
-      border-radius: 50%;
-      background-color: #fff;
       margin-top: 13px;
       position: absolute;
-      left: 0;
-      top: 0;
+      left: -5px;
+      top: 5px;
       @media screen and (max-width: 767px) {
         width: 30px;
         height: 30px;
@@ -859,7 +877,7 @@ body {
   width: 100%;
   font-size: 30px;
   font-weight: 500;
-  padding: 133px 6% 30px;
+  padding: 60px 6% 30px;
   @media screen and (max-width: 540px) {
     flex-direction: column;
     align-items: center;
@@ -900,7 +918,7 @@ body {
 
 .marque-bottom-container {
   margin-top: 30px;
-  height: 180px;
+  height: 220px;
   position: relative;
 }
 

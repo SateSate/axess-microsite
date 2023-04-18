@@ -130,3 +130,21 @@ tl3.from(dateLocation, {
   y: -50,
   ease: 'power4.out',
 });
+
+// let slideWidth = sections[0].offsetWidth;
+// console.log(slideWidth);
+
+const textOverAnimation = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.horizontal-scroll',
+    scrub: 1,
+    start: 'bottom right',
+    end: `+=${scrollDuration}`,
+  },
+});
+
+textOverAnimation.fromTo(
+  '.unlimited-img',
+  { xPercent: 0 },
+  { xPercent: -100 * (sections.length - 2), ease: 'none' }
+);
