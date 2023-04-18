@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   min-height: 100%;
@@ -55,15 +59,11 @@ ul {
 
 body {
   color: #fff;
-  background: url('../img/bg.jpg') top right no-repeat;
+  background: url('../img/bg.jpg') left center no-repeat;
   background-size: cover;
   font-family: 'Avenir Next Cyr';
   font-weight: 400;
   position: relative;
-}
-
-.container {
-  overflow: hidden;
 }
 
 .banner-section {
@@ -265,8 +265,43 @@ body {
   margin: 50px auto;
 }
 
+.h-container {
+  overflow-x: hidden;
+}
+
+.horizontal-scroll {
+  display: flex;
+  flex-wrap: no-wrap;
+  width: 300%;
+  overflow-x: hidden;
+  position: relative;
+  .slide {
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+.line-container {
+  // clip-path: inset(0 0 0 0);
+  // overflow: hidden;
+  position: absolute;
+  // width: 100%;
+  // height: 100%;
+  top: 16%;
+  left: 13%;
+}
+
+.line {
+  // position: absolute;
+  // top: 50%;
+  // left: 0;
+  // transform: translateY(-50%);
+  // width: 100%;
+  // z-index: 99;
+}
+
 .unlimited {
-  width: max-content;
+  height: 100%;
   h2 {
     font-size: 60px;
     font-weight: 300;
@@ -333,7 +368,7 @@ body {
     img {
       padding-top: 5px;
       margin-left: 30px;
-      animation: bounce 2s infinite;
+      animation: bounceLink 2s infinite;
       @media screen and (max-width: 1300px) {
         width: 20px;
         height: 20px;
@@ -341,9 +376,9 @@ body {
     }
   }
   &.s1 {
-    padding: 10% 20%;
+    padding: 20% 20% 0;
     @media screen and (max-width: 767px) {
-      padding: 40% 5%;
+      padding: 20% 5% 0;
     }
   }
   &.s2 {
@@ -390,7 +425,7 @@ body {
   }
 }
 
-@keyframes bounce {
+@keyframes bounceLink {
   0% {
     transform: translateX(0);
   }
@@ -496,29 +531,29 @@ body {
       font-size: 30px;
       line-height: 40px;
     }
-    // &::before {
-    //   content: '';
-    //   display: block;
-    //   width: 40px;
-    //   height: 40px;
-    //   border-radius: 50%;
-    //   background-color: #fff;
-    //   margin-top: 13px;
-    //   position: absolute;
-    //   left: 0;
-    //   top: 0;
-    //   @media screen and (max-width: 767px) {
-    //     width: 30px;
-    //     height: 30px;
-    //     margin-top: 8px;
-    //   }
-    // }
+    &::before {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #fff;
+      margin-top: 13px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      @media screen and (max-width: 767px) {
+        width: 30px;
+        height: 30px;
+        margin-top: 8px;
+      }
+    }
   }
   .flex {
     display: flex;
     align-items: flex-start;
     // justify-content: space-between;
-    gap: 25px;
+    gap: 80px;
     @media screen and (max-width: 1180px) {
       flex-direction: column;
     }
@@ -602,6 +637,7 @@ body {
 .who {
   padding: 4% 6%;
   position: relative;
+  overflow: hidden;
 }
 
 .speaker {
@@ -638,11 +674,14 @@ body {
   gap: 80px;
   font-size: 30px;
   line-height: 40px;
-  padding-bottom: 150px;
   font-weight: 500;
   @media screen and (max-width: 992px) {
     font-size: 20px;
     line-height: 30px;
+  }
+  @media screen and (max-width: 530px) {
+    flex-direction: column;
+    gap: 40px;
   }
   .item {
     display: flex;
@@ -651,6 +690,9 @@ body {
     @media screen and (max-width: 992px) {
       gap: 40px;
     }
+    @media screen and (max-width: 530px) {
+      gap: 20px;
+    }
   }
 }
 
@@ -658,6 +700,9 @@ body {
   background: white;
   .white-content {
     padding: 86px 6% 0;
+    @media screen and (max-width: 992px) {
+      padding: 30px 6% 0;
+    }
     &.no-space {
       padding: 0;
     }
@@ -673,14 +718,17 @@ body {
     font-weight: 400;
     @media screen and (max-width: 1030px) {
       font-size: 100px;
+      line-height: 110px;
       margin-bottom: 50px;
     }
     @media screen and (max-width: 767px) {
       font-size: 70px;
+      line-height: 80px;
       margin-bottom: 30px;
     }
     @media screen and (max-width: 545px) {
       font-size: 50px;
+      line-height: 60px;
       margin-bottom: 20px;
     }
     span {
@@ -697,6 +745,15 @@ body {
         border: 1px solid #fb8034;
         width: 100%;
         height: 100%;
+        @media screen and (max-width: 1030px) {
+          padding: 0 10px;
+        }
+        @media screen and (max-width: 767px) {
+          padding: 0 5px;
+        }
+        @media screen and (max-width: 545px) {
+          padding: 0 3px;
+        }
       }
     }
   }
@@ -808,6 +865,10 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding: 30px 6% 30px;
+    .copy {
+      text-align: center;
+    }
   }
 }
 
@@ -825,7 +886,7 @@ body {
   height: 100vh;
   gap: 1rem;
   position: absolute;
-  top: 50%;
+  top: 55%;
   transform: translate(0, -50%);
   z-index: 9;
   h3 {
