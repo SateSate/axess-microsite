@@ -14,18 +14,18 @@ body {
 }
 
 @font-face {
-  font-family: "Avenir Next Cyr";
-  src: url("../font/AvenirNextCyr-Regular.woff2");
+  font-family: 'Avenir Next Cyr';
+  src: url('../font/AvenirNextCyr-Regular.woff2');
   font-weight: 400;
 }
 @font-face {
-  font-family: "Avenir Next Cyr";
-  src: url("../font/AvenirNextCyr-Medium.woff2");
+  font-family: 'Avenir Next Cyr';
+  src: url('../font/AvenirNextCyr-Medium.woff2');
   font-weight: 500;
 }
 @font-face {
-  font-family: "Avenir Next Cyr";
-  src: url("../font/AvenirNextCyr-Bold.woff2");
+  font-family: 'Avenir Next Cyr';
+  src: url('../font/AvenirNextCyr-Bold.woff2');
   font-weight: 700;
 }
 a {
@@ -57,7 +57,7 @@ body {
   color: #fff;
   background: #e8713c;
   background: linear-gradient(230deg, #e8713c 0%, #5a2c8e 100%);
-  font-family: "Avenir Next Cyr";
+  font-family: 'Avenir Next Cyr';
   font-weight: 400;
   position: relative;
 }
@@ -220,7 +220,7 @@ body {
   margin-right: 35px;
 }
 .story-container .content h2 span.tag::after {
-  content: "";
+  content: '';
   border-radius: 100px;
   position: absolute;
   top: 50%;
@@ -248,7 +248,7 @@ body {
   }
 }
 .story-container .content h2 span:not(.tag)::after {
-  content: "";
+  content: '';
   padding: 20px 40px;
   border-radius: 100px;
   position: absolute;
@@ -551,6 +551,93 @@ body {
   display: flex;
 }
 
+.campaign {
+  height: 400vh;
+  padding: 4% 6%;
+  position: relative;
+  margin-bottom: 200px;
+}
+
+.campaign-h1-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: min-content;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+
+.campaign-h1-container h1 {
+  font-size: 270px;
+  line-height: 280px;
+}
+
+.campaign-card-vertical {
+  position: absolute;
+  width: 350px;
+  height: 460px;
+  border-radius: 50px;
+}
+
+.campaign-card-horizontal {
+  position: absolute;
+  width: 520px;
+  height: 380px;
+  border-radius: 50px;
+}
+
+#campaign-card-01 {
+  top: 30%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-200%, -50%);
+  z-index: 1;
+}
+
+#campaign-card-02 {
+  top: 38%;
+  left: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 3;
+}
+
+#campaign-card-03 {
+  top: 48%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-150%, -50%);
+  z-index: 1;
+}
+
+#campaign-card-04 {
+  top: 60%;
+  left: 50%;
+  right: 50%;
+  transform: translate(25%, -50%);
+  z-index: 3;
+}
+
+#campaign-card-05 {
+  top: 68%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-150%, -50%);
+  z-index: 1;
+}
+
+#campaign-card-06 {
+  top: 75%;
+  left: 50%;
+  right: 50%;
+  transform: translate(0%, -50%);
+  z-index: 3;
+}
+
 .why-section {
   padding-top: 10%;
 }
@@ -589,8 +676,8 @@ body {
   }
 }
 .why-section li::before {
-  content: "";
-  background: url("../img/x.svg") no-repeat center center;
+  content: '';
+  background: url('../img/x.svg') no-repeat center center;
   display: block;
   width: 40px;
   height: 40px;
@@ -832,7 +919,7 @@ body {
   position: relative;
 }
 .white h2 span::after {
-  content: "";
+  content: '';
   padding: 0 18px;
   border-radius: 100px;
   position: absolute;
@@ -1051,7 +1138,7 @@ body {
   position: relative;
 }
 .underline::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -3px;
   left: 0;

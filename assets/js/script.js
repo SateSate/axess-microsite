@@ -148,3 +148,16 @@ textOverAnimation.fromTo(
   { xPercent: 0 },
   { xPercent: -100 * (sections.length - 2), ease: 'none' }
 );
+
+//CAMPAIGN SECTION
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: '.campaign-h1-container',
+    start: 'center center',
+    end: '400% bottom',
+    scrub: 1,
+    pin: true,
+    pinSpacing: false,
+  },
+});
