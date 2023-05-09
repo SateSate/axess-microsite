@@ -630,6 +630,40 @@ body {
   transform: translate(0%, -50%);
   z-index: 3;
 }
+@media screen and (max-width: 767px) {
+  .campaign-h1-container h1 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  .campaign-card-vertical {
+    width: 250px;
+    height: 360px;
+    border-radius: 25px;
+  }
+  .campaign-card-horizontal {
+    width: 420px;
+    height: 280px;
+    border-radius: 25px;
+  }
+  #campaign-card-01 {
+    transform: translate(-100%, -25%);
+  }
+  #campaign-card-02 {
+    transform: translate(25%, -25%);
+  }
+  #campaign-card-03 {
+    transform: translate(-50%, -25%);
+  }
+  #campaign-card-04 {
+    transform: translate(0%, -25%);
+  }
+  #campaign-card-05 {
+    transform: translate(-75%, -25%);
+  }
+  #campaign-card-06 {
+    transform: translate(0%, 0%);
+  }
+}
 
 .white {
   background: white;
