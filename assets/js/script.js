@@ -1,5 +1,28 @@
 gsap.registerPlugin(ScrollTrigger);
 
+// animate title .title
+gsap.from('.title', {
+  opacity: 0,
+  duration: 2,
+  y: -80,
+  ease: 'power4.out',
+});
+
+// what heading
+gsap.from('.text-what', {
+  scrollTrigger: {
+    trigger: '.story-container',
+    start: 'center center',
+    end: 'bottom center',
+    scrub: 1,
+  },
+  opacity: 0,
+  duration: 2,
+  y: -50,
+  ease: 'power4.out',
+});
+
+
 let sections = gsap.utils.toArray('.slide');
 let linePaths = ['#path1', '#path2', '#path3'];
 
@@ -32,39 +55,7 @@ navLinks.forEach((link) => {
   });
 });
 
-// animate title .title
-gsap.from('.title', {
-  opacity: 0,
-  duration: 2,
-  y: -80,
-  ease: 'power4.out',
-});
 
-const text1 = document.querySelector('.text1');
-const text2 = document.querySelector('.text2');
-
-const tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.story-container',
-    start: 'top center',
-    end: 'bottom center',
-    scrub: 1,
-  },
-});
-
-tl.from(text1, {
-  opacity: 0,
-  duration: 2,
-  y: -80,
-  ease: 'power4.out',
-});
-
-tl.from(text2, {
-  opacity: 0,
-  duration: 2,
-  y: -50,
-  ease: 'power4.out',
-});
 
 const textOverAnimation = gsap.timeline({
   scrollTrigger: {
