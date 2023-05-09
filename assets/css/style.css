@@ -314,12 +314,6 @@ body {
   font-weight: 500;
 }
 
-.line-container {
-  position: absolute;
-  top: 16%;
-  left: 13%;
-}
-
 .unlimited-img {
   position: absolute;
   left: 30%;
@@ -550,6 +544,26 @@ body {
 .fp-slide.fp-table {
   display: flex;
 }
+
+.line-container {
+  position: absolute;
+  width: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin: 0 20%;
+}
+
+.line {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300vw;
+}
+
 
 .campaign {
   height: 400vh;
@@ -1147,7 +1161,8 @@ body {
   background: #000;
 }
 
-.fp-viewing-unlimited-0 .line1 path {
+/*BELOW ARE NO LONGER USED*/
+/*.fp-viewing-unlimited-0 .line1 path {
   animation: reveal 2s ease-in-out;
   animation-delay: 1.5s;
 }
@@ -1222,6 +1237,6 @@ body {
     left: 10%;
     transform: none;
   }
-}
+}*/
 
 /*# sourceMappingURL=style.css.map */

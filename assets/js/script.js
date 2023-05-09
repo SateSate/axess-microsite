@@ -161,3 +161,18 @@ gsap.timeline({
     pinSpacing: false,
   },
 });
+
+//LINE SECTION
+
+gsap.to('.line-container', {
+  scrollTrigger: {
+    trigger: '.horizontal-scroll',
+    markers: true,
+    scrub: 2,
+    start: 'top center',
+    endTrigger: '.campaign',
+    end: 'center bottom',
+    ease: Power4.easeOut,
+  },
+  width: '300vw',
+});
