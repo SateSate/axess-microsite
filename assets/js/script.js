@@ -1,24 +1,3 @@
-function marquee(selector, speed) {
-  const parentSelector = document.querySelector(selector);
-  const clone = parentSelector.innerHTML;
-  const firstElement = parentSelector.children[0];
-  let i = 0;
-
-  parentSelector.insertAdjacentHTML('beforeend', clone);
-  parentSelector.insertAdjacentHTML('beforeend', clone);
-
-  setInterval(function () {
-    firstElement.style.marginLeft = `-${i}px`;
-    if (i > firstElement.clientWidth) {
-      i = 0;
-    }
-    i = i + speed;
-  }, 0);
-}
-
-window.addEventListener('load', marquee('.marquee', 0.5));
-window.addEventListener('load', marquee('.marquee-bottom', 0.5));
-
 gsap.registerPlugin(ScrollTrigger);
 
 let sections = gsap.utils.toArray('.slide');
@@ -87,53 +66,6 @@ tl.from(text2, {
   ease: 'power4.out',
 });
 
-const why = document.querySelector('.why');
-
-const tl2 = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.why',
-    start: 'top center',
-    end: 'bottom center',
-    scrub: 1,
-  },
-});
-
-tl2.from(why, {
-  opacity: 0,
-  duration: 2,
-  y: -80,
-  ease: 'power4.out',
-});
-
-const who = document.querySelector('.who');
-const dateLocation = document.querySelector('.date-location');
-
-const tl3 = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.who',
-    start: 'top center',
-    end: 'bottom center',
-    scrub: 1,
-  },
-});
-
-tl3.from(who, {
-  opacity: 0,
-  duration: 2,
-  y: -80,
-  ease: 'power4.out',
-});
-
-tl3.from(dateLocation, {
-  opacity: 0,
-  duration: 2,
-  y: -50,
-  ease: 'power4.out',
-});
-
-// let slideWidth = sections[0].offsetWidth;
-// console.log(slideWidth);
-
 const textOverAnimation = gsap.timeline({
   scrollTrigger: {
     trigger: '.horizontal-scroll',
@@ -167,7 +99,6 @@ gsap.timeline({
 gsap.to('.line-container', {
   scrollTrigger: {
     trigger: '.horizontal-scroll',
-    markers: true,
     scrub: 2,
     start: 'top center',
     endTrigger: '.campaign',
