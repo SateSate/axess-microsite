@@ -61,7 +61,7 @@ body {
   font-weight: 400;
   position: relative;
 }
-
+/*////////////////////////////BANNER AND NAV/////////////////////////////////*/
 .banner-section {
   height: 100vh;
   display: flex;
@@ -116,34 +116,22 @@ body {
   padding: 50px 7% 0;
   z-index: 99;
 }
-@media screen and (max-width: 768px) {
-  .nav {
-    padding: 30px 5% 0;
-  }
+
+.logo-mobile {
+  display: none;
 }
-@media screen and (max-width: 768px) {
-  .nav .logo img {
-    width: 120px;
-  }
+.logo-desktop {
+  display: block;
 }
+
 .nav .nav-list {
   display: flex;
   gap: 30px;
 }
-@media screen and (max-width: 580px) {
-  .nav .nav-list {
-    flex-direction: column;
-    gap: 5px;
-  }
-}
 .nav .nav-list .nav-item {
   font-size: 25px;
 }
-@media screen and (max-width: 768px) {
-  .nav .nav-list .nav-item {
-    font-size: 20px;
-  }
-}
+
 .nav .nav-list .nav-item .nav-link {
   display: inline-block;
 }
@@ -153,7 +141,29 @@ body {
   height: 26px;
   object-fit: cover;
 }
+
+@media screen and (max-width: 580px) {
+  .nav .nav-list {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
 @media screen and (max-width: 768px) {
+  .nav {
+    padding: 30px 5% 0;
+    .nav .logo img {
+      width: 120px;
+    }
+  }
+  .nav .nav-list .nav-item {
+    font-size: 20px;
+  }
+  .logo-mobile {
+    display: block;
+  }
+  .logo-desktop {
+    display: none;
+  }
   .nav .nav-list .nav-item .nav-link img {
     width: 20px;
     height: 20px;
@@ -171,6 +181,9 @@ body {
     transform: translateY(0);
   }
 }
+
+/*////////////////////////////BANNER AND NAV/////////////////////////////////*/
+
 .story-container {
   padding: 145px 10% 0;
   margin-bottom: 200px;
