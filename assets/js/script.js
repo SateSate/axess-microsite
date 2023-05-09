@@ -21,27 +21,8 @@ gsap.from('.text-what', {
   y: -50,
   ease: 'power4.out',
 });
-
-
-let sections = gsap.utils.toArray('.slide');
-let linePaths = ['#path1', '#path2', '#path3'];
-
-const scrollDuration = 3000;
-
-gsap.to(sections, {
-  xPercent: -100 * (sections.length - 1),
-  ease: 'none',
-  scrollTrigger: {
-    trigger: '.horizontal-scroll',
-    pin: '.h-container',
-    pinSpacing: true,
-    scrub: 1,
-    end: `+=${scrollDuration}`,
-  },
-});
-
+// scroll from nav
 const navLinks = document.querySelectorAll('.nav-link, .links a');
-
 navLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
     event.preventDefault();
@@ -54,9 +35,42 @@ navLinks.forEach((link) => {
     });
   });
 });
+const isMobile = window.matchMedia(
+  'only screen and (max-width: 768px)'
+).matches;
 
+if (isMobile) {
+  //ANIMATION FOR MOBILE ONLY
+} else {
+  //ANIMATIONS FOR DESKTOP ONLY
 
-
+  //HORIZONTAL LINE SECTION
+  gsap.to('.line-container', {
+    scrollTrigger: {
+      trigger: '.horizontal-scroll',
+      scrub: 2,
+      start: 'top center',
+      endTrigger: '.campaign',
+      end: 'center bottom',
+      ease: Power4.easeOut,
+    },
+    width: '300vw',
+  });
+}
+//HORIZONATL SCROLL SECTIONS
+let sections = gsap.utils.toArray('.slide');
+const scrollDuration = 3000;
+gsap.to(sections, {
+  xPercent: -100 * (sections.length - 1),
+  ease: 'none',
+  scrollTrigger: {
+    trigger: '.horizontal-scroll',
+    pin: '.h-container',
+    pinSpacing: true,
+    scrub: 1,
+    end: `+=${scrollDuration}`,
+  },
+});
 const textOverAnimation = gsap.timeline({
   scrollTrigger: {
     trigger: '.horizontal-scroll',
@@ -71,7 +85,6 @@ textOverAnimation.fromTo(
   { xPercent: 0 },
   { xPercent: -100 * (sections.length - 2), ease: 'none' }
 );
-
 //CAMPAIGN SECTION
 
 gsap.timeline({
@@ -83,18 +96,4 @@ gsap.timeline({
     pin: true,
     pinSpacing: false,
   },
-});
-
-//LINE SECTION
-
-gsap.to('.line-container', {
-  scrollTrigger: {
-    trigger: '.horizontal-scroll',
-    scrub: 2,
-    start: 'top center',
-    endTrigger: '.campaign',
-    end: 'center bottom',
-    ease: Power4.easeOut,
-  },
-  width: '300vw',
 });
