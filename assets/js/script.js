@@ -1,7 +1,6 @@
-window.onload = function(){
-  window.scrollTo(0,0);
-}
-
+window.onload = function () {
+  window.scrollTo(0, 0);
+};
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,6 +19,7 @@ gsap.from('#what', {
     start: 'center center',
     end: 'bottom center',
     scrub: 1,
+    markers: true,
   },
   opacity: 0,
   duration: 2,
