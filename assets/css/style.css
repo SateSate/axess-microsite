@@ -71,6 +71,7 @@ body {
     rgba(130, 43, 129, 1) 75%,
     rgba(95, 44, 142, 1) 100%
   );
+  overflow: hidden;
 }
 /*////////////////////////////BANNER AND NAV/////////////////////////////////*/
 .banner-section {
@@ -558,7 +559,7 @@ body {
 
     .roadmap-cards-wrapper {
       height: 1300px;
-  }
+    }
   }
 
   @media screen and (max-width: 700px) {
@@ -581,7 +582,7 @@ body {
 
     .roadmap-cards-wrapper {
       height: 800px;
-  }
+    }
   }
   @media screen and (max-width: 500px) {
     .roadmap-card {
@@ -595,10 +596,9 @@ body {
       line-height: 12px;
     }
 
-
     .roadmap-cards-wrapper {
       height: 500px;
-  }
+    }
   }
 }
 
@@ -725,6 +725,8 @@ body {
   }
 }
 
+/*////////////////////////////TOUCH SECTION/////////////////////////////////*/
+
 .white {
   background: white;
 }
@@ -802,32 +804,36 @@ body {
   }
 }
 
-.seperator-footer {
-  height: 1px;
-  background: #000;
-  margin: 20px 0;
-}
+/*//////////////////////////// SOCIAL SECTION/////////////////////////////////*/
 
 .socials {
   color: #000;
+  padding: 100px;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 .socials h3 {
   font-size: 25px;
   font-weight: 500;
-  padding: 0 6%;
+  margin-bottom: 50px;
 }
-@media screen and (max-width: 992px) {
-  .socials h3 {
-    font-size: 20px;
-  }
-}
+
 .socials ul {
   display: flex;
   align-items: center;
-  gap: 32px;
+  justify-content: space-between;
   font-size: 50px;
   font-weight: 500;
-  padding: 0 6%;
+}
+
+.socials ul a {
+  display: block;
+  border: 1px solid #fb8034;
+  border-radius: 100px;
+  padding: 10px 100px;
+  color: #fb8034;
+  transition: all 0.4s ease;
+  text-transform: capitalize;
 }
 @media screen and (max-width: 1480px) {
   .socials ul {
@@ -842,55 +848,47 @@ body {
     gap: 20px;
   }
 }
-.socials ul a {
-  display: block;
-  border: 1px solid #fb8034;
-  border-radius: 100px;
-  padding: 5px 30px;
-  color: #fb8034;
-  transition: all 0.4s ease;
-}
+
 .socials ul a:hover {
   background: #fb8034;
   color: white;
 }
 
-.footer {
-  background: white;
+.footer-items {
+  max-width: 2000px;
+  padding: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   color: #000;
-  position: relative;
-  font-weight: 500;
 }
-.footer ul {
+
+.footer-items ul {
   font-size: 30px;
+  width: 33%;
 }
 @media screen and (max-width: 992px) {
-  .footer ul {
+  .footer-items ul {
     font-size: 20px;
   }
 }
-.footer ul span {
+.footer-items ul span {
   font-size: 25px;
   display: block;
   margin-bottom: 10px;
 }
-.footer .fp-scroller {
+.footer-items .fp-scroller {
   height: 100%;
 }
-.footer .fp-tableCell {
+.footer-items .fp-tableCell {
   height: 100% !important;
 }
-.footer .links a {
+.footer-items .links a {
   display: block;
   margin-bottom: 20px;
 }
 
-.footer-items {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 133px 6% 0;
-}
 @media screen and (max-width: 992px) {
   .footer-items {
     flex-direction: column;
@@ -899,15 +897,73 @@ body {
     gap: 50px;
   }
 }
+/*////////////////////////////SCROLLING TEXT SECTION/////////////////////////////////*/
 
+.marquee-container {
+  position: relative;
+  position: relative;
+  width: 100vw;
+  height: 250px;
+  overflow: hidden;
+}
+.marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+
+.marquee span {
+  font-size: 12.5vw;
+  color: #48199f;
+  font-weight: 400;
+  text-transform: lowercase;
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee2 span {
+  animation-delay: 5s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+/*////////////////////////////FOOTER BOTTOM/////////////////////////////////*/
+.footer-logo {
+  max-width: 2000px;
+  padding: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 0;
+}
+.footer-logo-dash-mobile {
+  display: none;
+}
+.footer-logo-a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .bootom-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  max-width: 2000px;
+  padding: 100px;
   font-size: 30px;
   font-weight: 500;
-  padding: 60px 6% 30px;
+}
+.bootom-footer .copy {
+  color: black;
 }
 @media screen and (max-width: 540px) {
   .bootom-footer {
@@ -920,52 +976,6 @@ body {
   .bootom-footer .copy {
     text-align: center;
   }
-}
-
-.footer-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.marquee {
-  display: flex;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-  gap: 1rem;
-  position: absolute;
-  top: 55%;
-  transform: translate(0, -50%);
-  z-index: 9;
-}
-.marquee h3 {
-  font-size: 300px;
-  font-weight: 300;
-  white-space: nowrap;
-  text-transform: uppercase;
-  align-self: center;
-}
-
-.marquee-bottom {
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  gap: 1rem;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  z-index: 9;
-}
-.marquee-bottom h3 {
-  font-size: 12.5vw;
-  color: #48199f;
-  font-weight: 400;
-  white-space: nowrap;
-  text-transform: uppercase;
-  align-self: center;
 }
 
 .video-holder {
@@ -1023,6 +1033,9 @@ body {
 }
 
 /*COMMON BODY AND HEADING */
+.dark {
+  color: #000;
+}
 .body-content {
   display: flex;
   flex-direction: column;
