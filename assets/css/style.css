@@ -424,6 +424,17 @@ body {
     transform: translateX(0);
   }
 }
+
+/*//////////////////////////// GOAL SECTION/////////////////////////////////*/
+#heading-goal {
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 540px) {
+  #heading-goal {
+    margin-bottom: 50px;
+  }
+}
 /*//////////////////////////// ROADMAP AND VERTICAL SECTION/////////////////////////////////*/
 .roadmap-cards-wrapper {
   width: 100vw;
@@ -901,6 +912,7 @@ body {
   width: 100%;
   background-color: #fff;
   margin: 150px 0;
+  color: #fff;
 }
 
 @media screen and (max-width: 1300px) {
