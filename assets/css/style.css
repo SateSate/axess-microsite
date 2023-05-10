@@ -221,30 +221,6 @@ body {
 
 /*////////////////////////////WHAT SECTION/////////////////////////////////*/
 
-.story-container {
-}
-
-.story-container .seperator {
-  margin: 106px auto 80px;
-}
-
-@media screen and (max-width: 767px) {
-  .story-container {
-  }
-
-  .story-container .seperator {
-    margin: 50px auto 50px;
-  }
-}
-@media screen and (max-width: 560px) {
-  .story-container {
-  }
-
-  .story-container .seperator {
-    margin: 30px auto 30px;
-  }
-}
-
 /*////////////////////////////HORIZONTAL SCROLL SECTION/////////////////////////////////*/
 
 .h-container {
@@ -727,7 +703,7 @@ body {
   }
 }
 
-.seperator-b {
+.seperator-footer {
   height: 1px;
   background: #000;
   margin: 20px 0;
@@ -925,6 +901,25 @@ body {
 .seperator {
   width: 100%;
   background-color: #fff;
+  margin: 150px 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .seperator {
+    margin: 100px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .seperator {
+    margin: 80px 0;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .seperator {
+    margin: 50px 0;
+  }
 }
 
 /*COMMON BODY AND HEADING */
@@ -939,7 +934,6 @@ body {
   font-size: 150px;
   line-height: 160px;
   font-weight: 300;
-  margin: 50px 0;
   align-self: flex-start;
 }
 .body-content h2 span {
