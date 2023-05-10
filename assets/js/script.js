@@ -19,7 +19,6 @@ gsap.from('#what', {
     start: 'center center',
     end: 'bottom center',
     scrub: 1,
-    markers: true,
   },
   opacity: 0,
   duration: 2,
@@ -81,18 +80,17 @@ if (isMobile) {
   gsap.to('.line-container', {
     scrollTrigger: {
       trigger: '.horizontal-scroll',
-      scrub: 2,
+      scrub: 1,
       start: 'top center',
-      endTrigger: '.body-content-goal',
-      end: 'center bottom',
+      endTrigger: '.campaign-h1',
+      end: 'top bottom',
       ease: Power4.easeOut,
     },
-    width: '300vw',
+    width: '250%',
   });
 }
 //HORIZONATL SCROLL SECTIONS
 let sections = gsap.utils.toArray('.slide');
-const scrollDuration = 3000;
 gsap.to(sections, {
   xPercent: -100 * (sections.length - 1),
   ease: 'none',

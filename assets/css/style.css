@@ -225,7 +225,7 @@ body {
 
 .h-container {
   overflow-x: hidden;
-  margin-bottom: 250vh;
+  margin-bottom: 350vh;
 }
 
 .horizontal-scroll {
@@ -314,12 +314,12 @@ body {
 .line-container {
   position: absolute;
   width: 0;
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
   display: flex;
   justify-self: center;
   align-items: center;
-  margin: 10% 20%;
+  margin: 0% 50%;
 }
 
 .line {
@@ -327,8 +327,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 300vw;
-  height: 80vh;
+  height: 90vh;
 }
 @media screen and (max-width: 1400px) {
   .unlimited.s3 {
