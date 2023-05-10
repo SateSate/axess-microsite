@@ -9,7 +9,21 @@ gsap.from('.title', {
 });
 
 // what heading
-gsap.from('.text-what', {
+gsap.from('#heading-what', {
+  scrollTrigger: {
+    trigger: '.story-container',
+    start: 'center center',
+    end: 'bottom center',
+    scrub: 1,
+  },
+  opacity: 0,
+  duration: 2,
+  y: -50,
+  ease: 'power4.out',
+});
+
+// goal heading
+gsap.from('#heading-goal', {
   scrollTrigger: {
     trigger: '.story-container',
     start: 'center center',
