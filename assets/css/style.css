@@ -209,8 +209,6 @@ body {
 /*////////////////////////////WHAT SECTION/////////////////////////////////*/
 
 .story-container {
-  padding: 100px 10% 0;
-  margin-bottom: 200px;
 }
 
 .story-container .seperator {
@@ -219,8 +217,6 @@ body {
 
 @media screen and (max-width: 767px) {
   .story-container {
-    padding: 100px 10% 0;
-    margin-bottom: 100px;
   }
 
   .story-container .seperator {
@@ -229,7 +225,6 @@ body {
 }
 @media screen and (max-width: 560px) {
   .story-container {
-    margin-bottom: 10px;
   }
 
   .story-container .seperator {
@@ -241,6 +236,7 @@ body {
 
 .h-container {
   overflow-x: hidden;
+  margin-bottom: 250vh;
 }
 
 .horizontal-scroll {
@@ -440,6 +436,85 @@ body {
     transform: translateX(0);
   }
 }
+/*//////////////////////////// ROADMAP AND VERTICAL SECTION/////////////////////////////////*/
+.roadmap-cards-wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.roadmap-line-container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.roadmap-line-img {
+  display: block;
+  height: 100%;
+  width: 80%;
+}
+
+.roadmap-cards {
+  position: relative;
+  width: 80%;
+  height: 100%;
+}
+
+.roadmap-card {
+  background-color: #48199f;
+  color: white;
+  height: 370px;
+  width: 320px;
+  border-radius: 20px;
+  position: absolute;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.roadmap-card p {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.roadmap-card img {
+  height: 40px;
+  width: 40px;
+  align-self: flex-end;
+}
+
+#roadmap-card-01 {
+  left: 0;
+  transform: translate(150%, 0);
+}
+
+#roadmap-card-02 {
+  top: 20%;
+  left: 100%;
+  transform: translate(-250%, 0%);
+}
+
+#roadmap-card-03 {
+  top: 40%;
+  left: 0%;
+  transform: translate(250%, 0%);
+}
+
+#roadmap-card-04 {
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/*////////////////////////////CAMPAIGN SCROLL SECTION/////////////////////////////////*/
 
 .campaign {
   height: 400vh;
@@ -843,12 +918,14 @@ body {
 .body-content {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  padding: 100px;
 }
 .body-content h2 {
   font-size: 150px;
-  line-height: 133px;
+  line-height: 160px;
   font-weight: 300;
-  padding-top: 50px;
+  margin: 50px 0;
   align-self: flex-start;
 }
 .body-content h2 span {
@@ -901,7 +978,6 @@ body {
   display: block;
   margin: 0;
   align-self: center;
-  max-width: 1400px;
   text-indent: 80px;
 }
 

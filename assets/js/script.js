@@ -25,9 +25,23 @@ gsap.from('#heading-what', {
 // goal heading
 gsap.from('#heading-goal', {
   scrollTrigger: {
-    trigger: '.story-container',
-    start: 'center center',
-    end: 'bottom center',
+    trigger: '#goal',
+    start: 'top center',
+    end: 'center center',
+    scrub: 1,
+  },
+  opacity: 0,
+  duration: 2,
+  y: -50,
+  ease: 'power4.out',
+});
+
+// roadmap heading
+gsap.from('#heading-roadmap', {
+  scrollTrigger: {
+    trigger: '#roadmap',
+    start: 'top center',
+    end: 'center center',
     scrub: 1,
   },
   opacity: 0,
@@ -64,7 +78,7 @@ if (isMobile) {
       trigger: '.horizontal-scroll',
       scrub: 2,
       start: 'top center',
-      endTrigger: '.campaign',
+      endTrigger: '.body-content-goal',
       end: 'center bottom',
       ease: Power4.easeOut,
     },
@@ -80,9 +94,10 @@ gsap.to(sections, {
   scrollTrigger: {
     trigger: '.horizontal-scroll',
     pin: '.h-container',
-    pinSpacing: true,
+    pinSpacing: false,
     scrub: 1,
-    end: `+=${scrollDuration}`,
+    endTrigger: '.body-content-goal',
+    end: 'top bottom',
   },
 });
 const textOverAnimation = gsap.timeline({
@@ -90,7 +105,8 @@ const textOverAnimation = gsap.timeline({
     trigger: '.horizontal-scroll',
     scrub: 1,
     start: 'bottom right',
-    end: `+=${scrollDuration}`,
+    endTrigger: '.body-content-goal',
+    end: 'top bottom',
   },
 });
 
