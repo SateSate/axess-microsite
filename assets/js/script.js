@@ -1,3 +1,8 @@
+window.onload = function(){
+  window.scrollTo(0,0);
+}
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 // animate title .title
@@ -9,7 +14,7 @@ gsap.from('.title', {
 });
 
 // what heading
-gsap.from('#heading-what', {
+gsap.from('#what', {
   scrollTrigger: {
     trigger: '.story-container',
     start: 'center center',
