@@ -130,3 +130,16 @@ gsap.timeline({
     pinSpacing: false,
   },
 });
+
+  //VERTICAL LINE SECTION
+  gsap.to('.roadmap-line-container', {
+    scrollTrigger: {
+      trigger: '.roadmap-cards',
+      scrub: 1,
+      start: 'top center',
+      end: 'center bottom',
+      endTrigger: '.campaign-h1',
+      ease: Power4.easeOut,
+    },
+    height: '100%',
+  });
