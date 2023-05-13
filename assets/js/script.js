@@ -2,6 +2,10 @@ window.onload = function () {
   window.scrollTo(0, 0);
 };
 
+window.onresize = function () {
+  location.reload();
+};
+
 gsap.registerPlugin(ScrollTrigger);
 
 // animate title .title
@@ -30,10 +34,9 @@ gsap.from('#what', {
 gsap.from('#heading-goal', {
   scrollTrigger: {
     trigger: '#reveal-goal',
-    start: window.innerWidth+' center',
-    end:  window.innerWidth +' 25%',
+    start: window.innerWidth + ' center',
+    end: window.innerWidth + ' 25%',
     scrub: 1,
-
   },
   opacity: 0,
   duration: 2,
@@ -45,9 +48,9 @@ gsap.from('#heading-goal', {
 gsap.from('#heading-roadmap', {
   scrollTrigger: {
     trigger: '#reveal-roadmap',
-    start: window.innerWidth+' center',
-    end:  window.innerWidth +' 25%',
-    scrub: 1,    
+    start: window.innerWidth + ' center',
+    end: window.innerWidth + ' 25%',
+    scrub: 1,
   },
   opacity: 0,
   duration: 2,
