@@ -71,48 +71,98 @@ const isMobile = window.matchMedia(
   'only screen and (max-width: 768px)'
 ).matches;
 
-//HORIZONTAL LINE SECTION
-gsap
-  .timeline({
+if (isMobile) {
+  //HORIZONTAL LINE SECTION
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: '.horizontal-scroll',
+        scrub: 1,
+        start: 'top top',
+        end: '+=' + window.innerWidth * 2,
+        ease: 'none',
+      },
+    })
+    .to('.line-container', { width: window.innerWidth })
+    .to('.line-container', { width: window.innerWidth * 1.5 })
+    .to('.line-container', { width: window.innerWidth * 1.75 })
+    .to('.line-container', { width: window.innerWidth * 2.25 })
+    .to('.line-container', { width: window.innerWidth * 2.75 })
+    .to('.line-container', { width: window.innerWidth * 3 })
+    .to('.line-container', { width: window.innerWidth * 3.5 })
+    .to('.line-container', { width: window.innerWidth * 4 })
+    .to('.line-container', { width: window.innerWidth * 4.5 })
+    .to('.line-container', { width: window.innerWidth * 5 })
+    .to('.line-container', { width: window.innerWidth * 5.75 });
+
+  let sections = gsap.utils.toArray('.slide');
+  gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1 / 2),
+    ease: 'none',
+    scrollTrigger: {
+      trigger: '.horizontal-scroll',
+      pin: true,
+      scrub: 1,
+      end: '+=' + window.innerWidth * 2,
+      start: 'top top',
+    },
+  });
+
+  gsap.to('.unlimited-img', {
+    xPercent: -50 * (sections.length - 2),
+    ease: 'none',
     scrollTrigger: {
       trigger: '.horizontal-scroll',
       scrub: 1,
+      end: '+=' + window.innerWidth * 2,
       start: 'top top',
+    },
+  });
+} else {
+  //HORIZONTAL LINE SECTION
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: '.horizontal-scroll',
+        scrub: 1,
+        start: 'top top',
+        end: '+=' + window.innerWidth,
+        ease: 'none',
+      },
+    })
+    .to('.line-container', { width: window.innerWidth })
+    .to('.line-container', {
+      width: window.innerWidth + window.innerWidth * 0.5,
+    })
+    .to('.line-container', {
+      width: window.innerWidth * 1.5 + window.innerWidth,
+    });
+
+  let sections = gsap.utils.toArray('.slide');
+  gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    ease: 'none',
+    scrollTrigger: {
+      trigger: '.horizontal-scroll',
+      pin: true,
+      scrub: 1,
       end: '+=' + window.innerWidth,
-      ease: 'none',
+      start: 'top top',
       markers: true,
     },
-  })
-  .to('.line-container', { width: window.innerWidth })
-  .to('.line-container', { width: window.innerWidth + window.innerWidth * 0.5 })
-  .to('.line-container', {
-    width: window.innerWidth * 1.5 + window.innerWidth,
   });
 
-//HORIZONATL SCROLL SECTIONS
-let sections = gsap.utils.toArray('.slide');
-gsap.to(sections, {
-  xPercent: -100 * (sections.length - 1),
-  ease: 'none',
-  scrollTrigger: {
-    trigger: '.horizontal-scroll',
-    pin: true,
-    scrub: 1,
-    end: '+=' + window.innerWidth,
-    start: 'top top',
-  },
-});
-
-gsap.to('.unlimited-img', {
-  xPercent: -100 * (sections.length - 2),
-  ease: 'none',
-  scrollTrigger: {
-    trigger: '.horizontal-scroll',
-    scrub: 1,
-    end: '+=' + window.innerWidth,
-    start: 'top top',
-  },
-});
+  gsap.to('.unlimited-img', {
+    xPercent: -100 * (sections.length - 2),
+    ease: 'none',
+    scrollTrigger: {
+      trigger: '.horizontal-scroll',
+      scrub: 1,
+      end: '+=' + window.innerWidth,
+      start: 'top top',
+    },
+  });
+}
 
 //CAMPAIGN SECTION
 gsap.timeline({

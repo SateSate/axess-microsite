@@ -224,12 +224,9 @@ body {
 
 /*////////////////////////////HORIZONTAL SCROLL SECTION/////////////////////////////////*/
 
-
 .horizontal-scroll {
   display: flex;
-  flex-wrap: no-wrap;
-  width: 300%;
-  overflow-x: hidden;
+  width: 300vw;
   position: relative;
 }
 .horizontal-scroll .slide {
@@ -323,7 +320,6 @@ body {
   display: inline-block;
   position: absolute;
   width: 250vw;
-
 }
 @media screen and (max-width: 1400px) {
   .unlimited.s3 {
@@ -368,6 +364,15 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
+  /*FOR MOBILE SIZED ANIMATIONS */
+
+  .horizontal-scroll {
+    width: 600vw;
+  }
+  .horizontal-scroll .slide {
+    width: 200vw;
+  }
+
   .unlimited h2 {
     font-size: 30px;
   }
@@ -382,13 +387,8 @@ body {
   .unlimited.s1 {
     padding: 10% 5% 0;
   }
-  .line-container {
-    width: 300vw;
-    padding: 0;
-    margin: 0;
-  }
   .line {
-    transform: translateY(-100px);
+    width: 550vw;
   }
 }
 @media screen and (max-width: 560px) {
