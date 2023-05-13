@@ -235,7 +235,6 @@ body {
 .horizontal-scroll .slide {
   height: 100vh;
   width: 100vw;
-  border: 5px solid pink;
 }
 
 .unlimited-img {
@@ -312,20 +311,19 @@ body {
 .line-container {
   position: absolute;
   width: 0;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
   display: flex;
   justify-self: center;
   align-items: center;
-  margin: 0% 50%;
+  margin: 0 25vw;
 }
 
 .line {
   display: inline-block;
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 90vh;
+  width: 250vw;
+
 }
 @media screen and (max-width: 1400px) {
   .unlimited.s3 {

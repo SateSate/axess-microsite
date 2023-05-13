@@ -71,55 +71,50 @@ const isMobile = window.matchMedia(
   'only screen and (max-width: 768px)'
 ).matches;
 
-if (isMobile) {
-  //ANIMATION FOR MOBILE ONLY
-} else {
-  //ANIMATIONS FOR DESKTOP ONLY
-
-  //HORIZONTAL LINE SECTION
-  gsap.to('.line-container', {
+//HORIZONTAL LINE SECTION
+gsap
+  .timeline({
     scrollTrigger: {
       trigger: '.horizontal-scroll',
       scrub: 1,
-      start: 'top center',
-      endTrigger: '.campaign-h1',
-      end: 'top bottom',
-      ease: Power4.easeOut,
+      start: 'top top',
+      end: '+=' + window.innerWidth,
+      ease: 'none',
+      markers: true,
     },
-    width: '250%',
+  })
+  .to('.line-container', { width: window.innerWidth })
+  .to('.line-container', { width: window.innerWidth + window.innerWidth * 0.5 })
+  .to('.line-container', {
+    width: window.innerWidth * 1.5 + window.innerWidth,
   });
-}
+
 //HORIZONATL SCROLL SECTIONS
 let sections = gsap.utils.toArray('.slide');
 gsap.to(sections, {
   xPercent: -100 * (sections.length - 1),
-  ease: "none",
+  ease: 'none',
   scrollTrigger: {
-    trigger: ".horizontal-scroll",
+    trigger: '.horizontal-scroll',
     pin: true,
     scrub: 1,
-    // base vertical scrolling on how wide the container is so it feels more natural.
-    end: "+="+ window.innerWidth,
-    markers: true
-  }
+    end: '+=' + window.innerWidth,
+    start: 'top top',
+  },
 });
-//const textOverAnimation = gsap.timeline({
-//  scrollTrigger: {
-//    trigger: '.horizontal-scroll',
-//    scrub: 1,
-//    start: 'bottom right',
-//    endTrigger: '.body-content-goal',
-//    end: 'top bottom',
-//  },
-//});
 
-//textOverAnimation.fromTo(
-//  '.unlimited-img',
-//  { xPercent: 0 },
-//  { xPercent: -100 * (sections.length - 2), ease: 'none' }
-//);
+gsap.to('.unlimited-img', {
+  xPercent: -100 * (sections.length - 2),
+  ease: 'none',
+  scrollTrigger: {
+    trigger: '.horizontal-scroll',
+    scrub: 1,
+    end: '+=' + window.innerWidth,
+    start: 'top top',
+  },
+});
+
 //CAMPAIGN SECTION
-
 gsap.timeline({
   scrollTrigger: {
     trigger: '.campaign-h1-container',
@@ -131,15 +126,15 @@ gsap.timeline({
   },
 });
 
-  //VERTICAL LINE SECTION
-  gsap.to('.roadmap-line-container', {
-    scrollTrigger: {
-      trigger: '.roadmap-cards',
-      scrub: 1,
-      start: 'top center',
-      end: 'center bottom',
-      endTrigger: '.campaign-h1',
-      ease: Power4.easeOut,
-    },
-    height: '100%',
-  });
+//VERTICAL LINE SECTION
+gsap.to('.roadmap-line-container', {
+  scrollTrigger: {
+    trigger: '.roadmap-cards',
+    scrub: 1,
+    start: 'top center',
+    end: 'center bottom',
+    endTrigger: '.campaign-h1',
+    ease: Power4.easeOut,
+  },
+  height: '100%',
+});
