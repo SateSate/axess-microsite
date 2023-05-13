@@ -93,31 +93,31 @@ if (isMobile) {
 let sections = gsap.utils.toArray('.slide');
 gsap.to(sections, {
   xPercent: -100 * (sections.length - 1),
-  ease: 'none',
+  ease: "none",
   scrollTrigger: {
-    trigger: '.horizontal-scroll',
-    pin: '.h-container',
-    pinSpacing: false,
+    trigger: ".horizontal-scroll",
+    pin: true,
     scrub: 1,
-    endTrigger: '.body-content-goal',
-    end: 'top bottom',
-  },
+    // base vertical scrolling on how wide the container is so it feels more natural.
+    end: "+="+ window.innerWidth,
+    markers: true
+  }
 });
-const textOverAnimation = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.horizontal-scroll',
-    scrub: 1,
-    start: 'bottom right',
-    endTrigger: '.body-content-goal',
-    end: 'top bottom',
-  },
-});
+//const textOverAnimation = gsap.timeline({
+//  scrollTrigger: {
+//    trigger: '.horizontal-scroll',
+//    scrub: 1,
+//    start: 'bottom right',
+//    endTrigger: '.body-content-goal',
+//    end: 'top bottom',
+//  },
+//});
 
-textOverAnimation.fromTo(
-  '.unlimited-img',
-  { xPercent: 0 },
-  { xPercent: -100 * (sections.length - 2), ease: 'none' }
-);
+//textOverAnimation.fromTo(
+//  '.unlimited-img',
+//  { xPercent: 0 },
+//  { xPercent: -100 * (sections.length - 2), ease: 'none' }
+//);
 //CAMPAIGN SECTION
 
 gsap.timeline({

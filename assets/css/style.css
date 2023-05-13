@@ -224,10 +224,6 @@ body {
 
 /*////////////////////////////HORIZONTAL SCROLL SECTION/////////////////////////////////*/
 
-.h-container {
-  overflow-x: hidden;
-  margin-bottom: 350vh;
-}
 
 .horizontal-scroll {
   display: flex;
@@ -238,7 +234,8 @@ body {
 }
 .horizontal-scroll .slide {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
+  border: 5px solid pink;
 }
 
 .unlimited-img {
