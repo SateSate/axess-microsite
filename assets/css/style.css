@@ -493,44 +493,25 @@ body {
 
 #roadmap-card-01 {
   left: 0;
-  transform: translate(25%, 0);
+  top: -5%;
 }
 
 #roadmap-card-02 {
   top: 15%;
-  left: 50%;
-  transform: translate(50%, 0%);
+  left: 85%;
 }
 
 #roadmap-card-03 {
-  top: 45%;
-  left: 0%;
-  transform: translate(50%, 0%);
+  top: 40%;
+  left: 45%;
 }
 
 #roadmap-card-04 {
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, 0);
+  top: 85%;
+  left: 5%;
 }
 
 @media screen and (max-width: 1300px) {
-  #roadmap-card-01 {
-    left: 0;
-    transform: translate(0%, 0);
-  }
-
-  #roadmap-card-02 {
-    top: 20%;
-    left: 50%;
-    transform: translate(50%, 0%);
-  }
-
-  #roadmap-card-04 {
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
 
   .roadmap-cards-wrapper {
     height: 1600px;
@@ -557,6 +538,18 @@ body {
     .roadmap-cards-wrapper {
       height: 1300px;
     }
+    
+    #roadmap-card-03 {
+      top: 50%;
+      left: 0%;
+    }
+    
+    #roadmap-card-04 {
+      top: 85%;
+      left: 30%;
+    }
+
+  
   }
 
   @media screen and (max-width: 700px) {
@@ -580,6 +573,22 @@ body {
     .roadmap-cards-wrapper {
       height: 800px;
     }
+    
+    #roadmap-card-02 {
+      top: 15%;
+      left: 75%;
+    }
+
+    #roadmap-card-03 {
+      top: 45%;
+      left: 40%;
+    }
+
+    #roadmap-card-04 {
+      top: 90%;
+      left: 20%;
+    }
+    
   }
   @media screen and (max-width: 500px) {
     .roadmap-card {
@@ -596,6 +605,21 @@ body {
     .roadmap-cards-wrapper {
       height: 500px;
     }
+
+    #roadmap-card-02 {
+      top: 20%;
+      left: 50%;
+    }
+
+    #roadmap-card-03 {
+      top: 45%;
+      left: 0%;
+    }
+    #roadmap-card-04 {
+      top: 80%;
+      left: 60%;
+    }
+
   }
 }
 

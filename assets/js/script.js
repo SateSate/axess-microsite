@@ -148,7 +148,6 @@ if (isMobile) {
       scrub: 1,
       end: '+=' + window.innerWidth,
       start: 'top top',
-      markers: true,
     },
   });
 
@@ -177,14 +176,34 @@ gsap.timeline({
 });
 
 //VERTICAL LINE SECTION
-gsap.to('.roadmap-line-container', {
-  scrollTrigger: {
-    trigger: '.roadmap-cards',
-    scrub: 1,
-    start: 'top center',
-    end: 'center bottom',
-    endTrigger: '.campaign-h1',
-    ease: Power4.easeOut,
-  },
-  height: '100%',
-});
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: '.roadmap-cards',
+      scrub: 1,
+      start: 'top center',
+      end: 'center top',
+      ease: Power4.easeOut,
+    },
+  })
+  .to('.roadmap-line-container', {
+    height: '25%',
+  })
+  .to('.roadmap-line-container', {
+    height: '35%',
+  })
+  .to('.roadmap-line-container', {
+    height: '45%',
+  })
+  .to('.roadmap-line-container', {
+    height: '55%',
+  })
+  .to('.roadmap-line-container', {
+    height: '65%',
+  })
+  .to('.roadmap-line-container', {
+    height: '75%',
+  })
+  .to('.roadmap-line-container', {
+    height: '100%',
+  });
