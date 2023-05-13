@@ -15,9 +15,9 @@ gsap.from('.title', {
 // what heading
 gsap.from('#what', {
   scrollTrigger: {
-    trigger: '.story-container',
+    trigger: '#reveal-what',
     start: 'center center',
-    end: 'bottom center',
+    end: 'center 25%',
     scrub: 1,
   },
   opacity: 0,
@@ -29,10 +29,11 @@ gsap.from('#what', {
 // goal heading
 gsap.from('#heading-goal', {
   scrollTrigger: {
-    trigger: '#goal',
-    start: 'top center',
-    end: 'center center',
+    trigger: '#reveal-goal',
+    start: window.innerWidth+' center',
+    end:  window.innerWidth +' 25%',
     scrub: 1,
+
   },
   opacity: 0,
   duration: 2,
@@ -43,10 +44,10 @@ gsap.from('#heading-goal', {
 // roadmap heading
 gsap.from('#heading-roadmap', {
   scrollTrigger: {
-    trigger: '#roadmap',
-    start: 'top center',
-    end: 'center center',
-    scrub: 1,
+    trigger: '#reveal-roadmap',
+    start: window.innerWidth+' center',
+    end:  window.innerWidth +' 25%',
+    scrub: 1,    
   },
   opacity: 0,
   duration: 2,
@@ -183,7 +184,7 @@ gsap
       scrub: 1,
       start: 'top center',
       end: 'center top',
-      ease: Power4.easeOut,
+      ease: Power1.easeOut,
     },
   })
   .to('.roadmap-line-container', {
@@ -207,3 +208,14 @@ gsap
   .to('.roadmap-line-container', {
     height: '100%',
   });
+
+gsap.to('.footer-logo-hide', {
+  xPercent: '150',
+  scrollTrigger: {
+    trigger: '.marquee',
+    scrub: 1,
+    start: 'top center',
+    end: 'center center',
+    ease: Power1.easeOut,
+  },
+});
