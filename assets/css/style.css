@@ -1333,25 +1333,80 @@ body {
 }
 
 /* projects */
-.back-btn {
-  font-size: 20px;
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+/* projects */
+.back-btn a {
   color: #48199f;
-  margin-bottom: 35px;
-}
-
-.headline {
-  padding: 100px 0 0 0;
+  margin-bottom: 28px;
+  font-weight: 500;
+  line-height: 27px;
+  display: block;
 }
 
 .headline-text {
-  padding: 0 100px;
-  margin-top: 100px;
+  margin-top: 270px;
+  margin-bottom: 110px;
+}
+
+.headline-text h2 {
+  font-size: 150px;
+  line-height: 160px;
+  font-weight: 400;
+  position: relative;
+}
+
+.headline-text h2 span {
+  position: relative;
+  display: inline-block;
+}
+
+.headline-text h2 span::after {
+  content: '';
+  padding: 4px 26px;
+  border-radius: 100px;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100px;
+  border: 1px solid #fb8034;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .flex-text {
   display: flex;
   gap: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 120px;
 }
 
 .flex-text > * {
@@ -1370,11 +1425,14 @@ body {
   color: #fb8034;
 }
 
-.flex-text h2,
-.title-text h2 {
+.flex-text h2 {
   font-size: 70px;
   line-height: 80px;
   font-weight: 300;
+}
+
+.img-title {
+  margin-bottom: 65px;
 }
 
 .body-container {
@@ -1388,7 +1446,7 @@ body {
   max-width: 830px;
   height: 552px;
   width: 100%;
-  margin: 100px auto;
+  margin: 0 auto 140px;
   position: relative;
 }
 
@@ -1421,9 +1479,9 @@ body {
 
 .wide-img {
   width: 100%;
-  height: auto;
+  max-height: 750px;
   object-fit: cover;
-  margin: 100px 0;
+  margin-bottom: 140px;
 }
 
 .points li {
@@ -1435,7 +1493,7 @@ body {
   content: '';
   display: inline-block;
   width: 10px;
-  height: 21px;
+  height: 20px;
   background-image: url('../img/arrow-orange.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -1447,7 +1505,18 @@ body {
 }
 
 .w-80 {
-  width: 80%;
+  max-width: 1116px;
+  width: 100%;
+}
+
+.title-text {
+  margin-bottom: 53px;
+}
+
+.title-text h2 {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 70px;
 }
 
 .author {
@@ -1455,26 +1524,27 @@ body {
   align-items: center;
   font-size: 30px;
   color: #fb7f33;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
 }
 
 .author img {
   width: 122px;
   height: 122px;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 26px;
 }
 
 .project {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 17px;
 }
 
 .project img {
   width: 100%;
-  height: auto;
+  max-height: 750px;
   border-radius: 50px;
+  object-fit: cover;
 }
 
 .project img:first-child {
@@ -1482,145 +1552,36 @@ body {
 }
 
 .project-navigation {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 130px;
+  margin-bottom: 130px;
   display: flex;
   justify-content: space-between;
 }
 
-.project-navigation button {
+.project-navigation a {
   font-size: 150px;
+  line-height: 160px;
   background: transparent;
   border: none;
   color: white;
   cursor: pointer;
+  font-family: inherit;
 }
 
-.project-navigation button.next {
+.project-navigation a.next {
   border-bottom: 1px solid white;
-}
-
-@media screen and (max-width: 1220px) {
-  .project-navigation {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .project-navigation button {
-    font-size: 100px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .flex-text {
-    display: block;
-  }
-  .wide-img {
-    margin: 30px 0;
-  }
-  .flex-text p {
-    font-size: 22px;
-    line-height: 28px;
-    margin-bottom: 30px;
-  }
-  .flex-text h2,
-  .title-text h2 {
-    font-size: 40px;
-    line-height: 50px;
-    margin-bottom: 30px;
-  }
-  .points li {
-    font-size: 22px;
-    line-height: 28px;
-  }
-  .points li::before {
-    width: 15px;
-    height: 15px;
-    margin-right: 15px;
-  }
-  .author {
-    font-size: 24px;
-    color: #fb7f33;
-    margin-bottom: 50px;
-  }
-  .author img {
-    width: 100px;
-    height: 100px;
-  }
-  .project img {
-    border-radius: 20px;
-  }
-  .project-navigation {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-  }
-  .project-navigation button {
-    font-size: 60px;
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .project {
-    display: block;
-  }
-
-  .project img {
-    max-height: 360px;
-    margin-bottom: 30px;
-  }
-
-  .headline {
-    padding: 50px 0 0 0;
-  }
-
-  .headline-text {
-    padding: 0 50px;
-  }
-
-  .body-container {
-    padding: 0 50px;
-  }
-
-  .video-holder-mid {
-    margin: 50px auto;
-    height: 300px;
-  }
-  .project-navigation {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (max-width: 560px) {
-  .headline {
-    padding: 30px 0 0 0;
-  }
-
-  .headline-text {
-    padding: 0 30px;
-  }
-
-  .body-container {
-    padding: 0 30px;
-  }
-
-  .video-holder-mid {
-    margin: 30px auto;
-  }
-  .project-navigation button {
-    font-size: 40px;
-  }
 }
 
 .project-downloads {
-  margin-top: 100px;
+  margin-top: 144px;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-  padding: 30px 0;
+  padding: 36px 0 80px;
 }
 
 .project-downloads h3 {
   font-size: 70px;
+  line-height: 80px;
   font-weight: 300;
 }
 
@@ -1628,7 +1589,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .project-files {
@@ -1645,6 +1606,10 @@ body {
   max-width: 90px;
 }
 
+.project-link img {
+  margin-bottom: 17px;
+}
+
 .project-downloads h3 {
   font-size: 40px;
 }
@@ -1654,11 +1619,131 @@ body {
   line-height: 20px;
 }
 
-@media screen and (max-width: 767px) {
-  .project-downloads h3 {
-    font-size: 40px;
+@media screen and (max-width: 1220px) {
+  .project-navigation {
+    margin-top: 50px;
+    margin-bottom: 70px;
   }
-  .project-downloads img {
-    height: 40px;
+  .project-navigation a {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .body-container {
+    padding: 0 30px;
+  }
+  .headline-text {
+    margin-top: 184px;
+    margin-bottom: 50px;
+  }
+  .back-btn a {
+    font-size: 17px;
+    line-height: 86px;
+  }
+  .headline-text h2 {
+    font-size: 64px;
+    line-height: 69px;
+  }
+  .headline-text h2 span::after {
+    padding: 2px 10px;
+  }
+  .wide-img {
+    max-height: 337px;
+    margin-bottom: 50px;
+  }
+  .flex-text {
+    display: block;
+    margin-bottom: 50px;
+  }
+  .flex-text p {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .flex-text h2 {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 22px;
+  }
+  .video-holder-mid {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 40px;
+  }
+  .video-holder-mid .video-btn {
+    width: 90px;
+    height: 90px;
+  }
+  .img-title {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 22px;
+  }
+  .points li {
+    font-size: 25px;
+    line-height: 37px;
+  }
+  .points li::before {
+    height: 18px;
+  }
+  .title-text {
+    margin-top: 100px;
+    margin-bottom: 23px;
+  }
+  .title-text h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .author {
+    font-size: 25px;
+    margin-bottom: 88px;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+  .project img {
+    width: 100%;
+    max-height: 360px;
+    border-radius: 20px;
+  }
+  .project img:first-child {
+    grid-column: 1;
+  }
+  .project-downloads {
+    margin-top: 50px;
+    padding: 25px 0;
+  }
+  .project-header {
+    margin-bottom: 40px;
+  }
+  .project-header h3 {
+    font-size: 30px;
+  }
+  .project-header img {
+    height: 26px;
+  }
+  .project-link {
+    font-size: 11px;
+
+    max-width: 53px;
+  }
+  .project-link span {
+    line-height: 12px;
+  }
+  .project-link img {
+    margin-bottom: 13px;
+    width: 100%;
+  }
+  .project-navigation {
+    flex-direction: column-reverse;
+  }
+  .project-navigation a {
+    font-size: 64px;
+    line-height: 90px;
+    width: max-content;
+    margin-bottom: 20px;
   }
 }
